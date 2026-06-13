@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,12 +15,11 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Jost', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -29,15 +30,14 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #f43f5e, #f97316);
+  background: linear-gradient(to bottom, #8e1119, #c76018);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #e11d48, #ea580c);
+  background: linear-gradient(to bottom, #6f0d13, #a94a16);
 }
 
-/* Line clamp utilities */
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -52,13 +52,12 @@ body {
   overflow: hidden;
 }
 
-/* Animation for offers */
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 5px rgba(249, 115, 22, 0.5);
+    box-shadow: 0 0 5px rgba(142, 17, 25, 0.45);
   }
   50% {
-    box-shadow: 0 0 20px rgba(249, 115, 22, 0.8);
+    box-shadow: 0 0 18px rgba(199, 96, 24, 0.65);
   }
 }
 
